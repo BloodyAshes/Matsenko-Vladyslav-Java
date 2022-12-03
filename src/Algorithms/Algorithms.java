@@ -43,6 +43,10 @@ public class Algorithms {
 
     }
 
+    private void closeScanner(){
+        scan.close();
+    }
+
     public static void main(String[] args) {
         Algorithms algorithms = new Algorithms();
 
@@ -51,5 +55,7 @@ public class Algorithms {
         algorithms.isNameEqual();
 
         algorithms.isMultiBy();
+
+        algorithms.closeScanner();
     }
 }
