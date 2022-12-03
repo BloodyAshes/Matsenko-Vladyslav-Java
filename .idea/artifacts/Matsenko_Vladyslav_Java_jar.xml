@@ -2,9 +2,6 @@
   <artifact type="jar" name="Matsenko Vladyslav Java:jar">
     <output-path>$PROJECT_DIR$/Matsenko_Vladyslav_Java_jar</output-path>
     <root id="archive" name="Matsenko Vladyslav Java.jar">
-      <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
-      </element>
       <element id="module-output" name="Matsenko Vladyslav Java" />
     </root>
   </artifact>
