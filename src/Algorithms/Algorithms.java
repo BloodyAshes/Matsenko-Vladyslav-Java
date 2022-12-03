@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Algorithms {
 
-    private Scanner scan = new Scanner(System.in);
+    private static Scanner scan = new Scanner(System.in);
 
-    private void isNumberBigger() {
+    private static void isNumberBigger() {
         int number;
 
         System.out.println("Введите пожалуйста число");
@@ -18,7 +18,7 @@ public class Algorithms {
         }
     }
 
-    private void isNameEqual() {
+    private static void isNameEqual() {
         String name;
 
         System.out.println("Введите пожалуйста ваше имя");
@@ -32,7 +32,7 @@ public class Algorithms {
         }
     }
 
-    private void isMultiBy(){
+    private static void isMultiBy(){
         int[] numbers = {5, 8, 3, 25, 28, 48, 50, 90, 66, 87};
 
         for (int i = 0; i < numbers.length; i++){
@@ -43,19 +43,14 @@ public class Algorithms {
 
     }
 
-    private void closeScanner(){
+    private static void closeScanner(){
         scan.close();
     }
 
     public static void main(String[] args) {
-        Algorithms algorithms = new Algorithms();
-
-        algorithms.isNumberBigger();
-
-        algorithms.isNameEqual();
-
-        algorithms.isMultiBy();
-
-        algorithms.closeScanner();
+        isNumberBigger();
+        isNameEqual();
+        isMultiBy();
+        closeScanner();
     }
 }
